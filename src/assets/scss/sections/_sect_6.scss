@@ -22,6 +22,7 @@
 	&__text {
 		position: absolute;
 		top: 27%;
+		right: 1%;
 		transform: rotate(90deg);
 		color: #d88e9b;
 		font-size: 28px;
@@ -29,7 +30,7 @@
 
 		@include is-sp {
 			top: 4%;
-			left: -7%;
+			right: 66%;
 		}
 	}
 
