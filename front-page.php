@@ -48,7 +48,8 @@
                 </p>
             </div>
             <div class="heat__divider">
-                <img src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/divider.png" alt="">
+                <img class="img-1" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/divider.png" alt="">
+                <img class="img-2" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/divider_sp.png" alt="">
             </div>
             <div class="heat__col-2">
                 <p class="title">耐震等級「3」</p>
@@ -169,7 +170,7 @@
             <div class="procedure__right afterimage">
                 <div class="procedure__item">
                     <div class="row-1">
-                        <p class="title">自社検査＋第三者機関による検査</p>
+                        <p class="title">自社検査＋<br>第三者機関による検査</p>
                     </div>
                     <p class="desc">はるのいえでは、自社検査のほか第三者機関による検査も行っています。<br>
                         検査は全7回177項目。雨漏りや水漏れしやすい部分と躯体の強度、省エネに関する部分を重点的にチェックします。
