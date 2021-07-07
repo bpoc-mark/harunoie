@@ -1,0 +1,229 @@
+.sect_7 {
+	background: #d88e9b;
+	padding: 200px 0;
+
+	.procedure {
+		display: flex;
+
+		&__left {
+			justify-content: flex-start;
+			display: flex;
+		}
+
+		&__left:nth-of-type(1) {
+			&::after {
+				content: "";
+				background: url("../image/sect_7/arrow_swirl.png");
+				background-repeat: no-repeat;
+				width: 56%;
+				background-position-y: 60%;
+				background-position-x: 5%;
+			}
+		}
+
+		&__left:nth-of-type(3) {
+			&::after {
+				content: "";
+				background: url("../image/sect_7/arrow_swirl_2.png");
+				background-repeat: no-repeat;
+				width: 56%;
+				background-position-y: 60%;
+				background-position-x: 5%;
+			}
+		}
+
+		&__left:nth-of-type(5) {
+			&::after {
+				content: "";
+				background: url("../image/sect_7/arrow_swirl_3.png");
+				background-repeat: no-repeat;
+				width: 56%;
+				background-position-y: 60%;
+				background-position-x: 5%;
+			}
+		}
+
+		// PROCEDURE RIGHT
+		&__right {
+			justify-content: flex-end;
+			display: flex;
+		}
+
+		&__right:nth-of-type(2) {
+			&::before {
+				content: "";
+				background: url("../image/sect_7/arrow_1.png");
+				background-repeat: no-repeat;
+				width: 56%;
+				background-position-y: 100%;
+				background-position-x: 95%;
+			}
+		}
+
+		&__right:nth-of-type(4) {
+			&::before {
+				content: "";
+				background: url("../image/sect_7/arrow_2.png");
+				background-repeat: no-repeat;
+				width: 56%;
+				background-position-y: 100%;
+				background-position-x: 95%;
+			}
+		}
+
+		&__right:nth-of-type(6) {
+			&::before {
+				content: "";
+				background: url("../image/sect_7/arrow_3.png");
+				background-repeat: no-repeat;
+				width: 56%;
+				background-position-y: 100%;
+				background-position-x: 95%;
+			}
+		}
+
+		&__right:nth-of-type(8) {
+			&::before {
+				content: "";
+				background: url("../image/sect_7/arrow_4.png");
+				background-repeat: no-repeat;
+				width: 56%;
+				background-position-y: 30%;
+				background-position-x: 85%;
+			}
+		}
+
+		&__item {
+			width: 44%;
+
+			.row-1 {
+				display: flex;
+				align-items: center;
+				position: relative;
+
+				.title {
+					font-size: 28px;
+					font-weight: 900;
+					color: #ffe600;
+					width: 100%;
+					padding: 30px 0 0 0;
+
+					@include font-line(28);
+				}
+			}
+
+			.desc {
+				font-size: 16px;
+				font-weight: 400;
+				color: #fff;
+				padding: 30px 0 0 0;
+
+				@include font-line(16);
+			}
+		}
+	}
+}
+
+.afterimage:nth-of-type(1) {
+	.row-1::after {
+		content: "01";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}
+
+.afterimage:nth-of-type(2) {
+	.row-1::after {
+		content: "02";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}
+
+.afterimage:nth-of-type(3) {
+	.row-1::after {
+		content: "03";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}
+
+.afterimage:nth-of-type(4) {
+	.row-1::after {
+		content: "04";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}
+
+.afterimage:nth-of-type(5) {
+	.row-1::after {
+		content: "05";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}
+
+.afterimage:nth-of-type(6) {
+	.row-1::after {
+		content: "06";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}
+
+.afterimage:nth-of-type(7) {
+	.row-1::after {
+		content: "07";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}
+
+.afterimage:nth-of-type(8) {
+	.row-1::after {
+		content: "08";
+		color: #fff;
+		font-family: "Noto Serif JP", sans-serif;
+		font-size: 100px;
+		font-weight: 500;
+		opacity: 0.15;
+		position: absolute;
+		left: 160px;
+	}
+}

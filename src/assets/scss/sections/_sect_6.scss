@@ -1,0 +1,159 @@
+.sect_6 {
+	position: relative;
+
+	&__image {
+		width: 45%;
+		position: absolute;
+		top: 0%;
+		right: 5%;
+	}
+
+	.heat {
+		display: flex;
+		padding: 200px 0 0 0;
+
+		&__col-1 {
+			width: 50%;
+			padding: 30px;
+
+			.title {
+				color: #d88e9b;
+				font-size: 32px;
+				font-weight: 600;
+
+				@include font-line(32);
+			}
+
+			.content {
+				font-size: 18px;
+				font-weight: 500;
+				padding: 20px 0 40px 0;
+
+				@include font-line(18);
+			}
+
+			.g2 {
+				font-size: 16px;
+				font-weight: 500;
+				padding: 60px 0 0 0;
+
+				@include font-line(16);
+			}
+
+			.note {
+				font-size: 16px;
+				font-weight: 500;
+
+				@include font-line(16);
+			}
+
+			table {
+				padding: 35px 0;
+
+				td {
+					font-weight: 400;
+				}
+			}
+
+			.heat20 {
+				font-size: 18px;
+				font-weight: 400;
+				padding: 40px 0 0 0;
+
+				@include font-line(18);
+			}
+
+			.heat_loss {
+				font-size: 18px;
+				font-weight: 700;
+				color: #d88e9b;
+
+				@include font-line(18);
+			}
+		}
+
+		&__divider {
+			padding-top: 280px;
+		}
+
+		&__col-2 {
+			width: 50%;
+			z-index: 999;
+			padding: 30px 10px 30px 60px;
+
+			.title {
+				color: #d88e9b;
+				font-size: 32px;
+				font-weight: 600;
+				padding: 275px 0 0 0;
+
+				@include font-line(32);
+			}
+
+			.content {
+				font-size: 18px;
+				font-weight: 500;
+				padding: 20px 0 40px 0;
+
+				@include font-line(18);
+			}
+
+			.seismic_grade {
+				font-size: 18px;
+				font-weight: 400;
+				padding: 20px 0 0 0;
+
+				@include font-line(18);
+
+				span {
+					color: #d88e9b;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	.fuel {
+		display: flex;
+		padding: 60px 0;
+		justify-content: center;
+		margin: 0 auto;
+
+		&__col-1 {
+			width: 47%;
+			padding: 20px;
+
+			.title {
+				font-size: 32px;
+				font-weight: 700;
+				color: #d88e9b;
+
+				@include font-line(32);
+			}
+
+			.desc {
+				font-size: 18;
+				font-weight: 400;
+				padding: 20px 0 0 0;
+
+				@include font-line(18);
+			}
+		}
+
+		&__col-2 {
+			width: 55%;
+			padding: 20px 0;
+
+			.title {
+				font-size: 16px;
+				font-weight: 500;
+
+				@include font-line(16);
+			}
+
+			.table-3 {
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
