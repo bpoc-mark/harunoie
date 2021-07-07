@@ -1,6 +1,17 @@
 .sect_7 {
 	background: #d88e9b;
 	padding: 200px 0;
+	position: relative;
+
+	&__text {
+		position: absolute;
+		top: 10%;
+		right: 7%;
+		transform: rotate(90deg);
+		color: #9a5165;
+		font-size: 28px;
+		font-weight: 700;
+	}
 
 	.procedure {
 		display: flex;

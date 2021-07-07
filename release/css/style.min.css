@@ -496,6 +496,7 @@ template{display:none}
 @font-face{font-family:'bananaslipplus';font-style:normal;font-weight:normal;src:local("DIN Alternate Bold"),url("../fonts/bananaslipplus.otf") format("opentype")}
 .sect_6{position:relative}
 .sect_6__image{width:45%;position:absolute;top:0;right:5%}
+.sect_6__text{position:absolute;top:27%;right:0;-webkit-transform:rotate(90deg);transform:rotate(90deg);color:#d88e9b;font-size:28px;font-weight:700}
 .sect_6 .heat{display:-webkit-box;display:-ms-flexbox;display:flex;padding:200px 0 0 0}
 .sect_6 .heat__col-1{width:50%;padding:30px}
 .sect_6 .heat__col-1 .title{color:#d88e9b;font-size:32px;font-weight:600;font-size:2rem}
@@ -519,7 +520,8 @@ template{display:none}
 .sect_6 .fuel__col-2{width:55%;padding:20px 0}
 .sect_6 .fuel__col-2 .title{font-size:16px;font-weight:500;font-size:1rem}
 .sect_6 .fuel__col-2 .table-3{padding-bottom:20px}
-.sect_7{background:#d88e9b;padding:200px 0}
+.sect_7{background:#d88e9b;padding:200px 0;position:relative}
+.sect_7__text{position:absolute;top:10%;right:7%;-webkit-transform:rotate(90deg);transform:rotate(90deg);color:#9a5165;font-size:28px;font-weight:700}
 .sect_7 .procedure{display:-webkit-box;display:-ms-flexbox;display:flex}
 .sect_7 .procedure__left{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;display:-webkit-box;display:-ms-flexbox;display:flex}
 .sect_7 .procedure__left:nth-of-type(1)::after{content:"";background:url("../image/sect_7/arrow_swirl.png");background-repeat:no-repeat;width:56%;background-position-y:60%;background-position-x:5%}

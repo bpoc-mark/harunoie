@@ -8,6 +8,16 @@
 		right: 5%;
 	}
 
+	&__text {
+		position: absolute;
+		top: 27%;
+		right: 0%;
+		transform: rotate(90deg);
+		color: #d88e9b;
+		font-size: 28px;
+		font-weight: 700;
+	}
+
 	.heat {
 		display: flex;
 		padding: 200px 0 0 0;

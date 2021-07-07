@@ -6,6 +6,7 @@
 <section>5</section>
 <section class="sect_6">
     <img class="sect_6__image" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/asset_1.png" alt="">
+    <p class="sect_6__text">performance</p>
     <div class="l-wrap">
         <div class="heat">
             <div class="heat__col-1">
@@ -99,7 +100,7 @@
 </section>
 <section class="sect_7">
     <div class="l-wrap">
-
+        <p class="sect_7__text">procedure</p>
         <div class="steps">
             <!-- STEP 1 -->
             <div class="procedure__left afterimage">
