@@ -1,6 +1,6 @@
 @use "sass:meta";@import-normalize .css;*{padding:0;margin:0}
 *,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}
-body{background-color:#fff;color:#303030;font-family:"Montserrat",sans-serif;font-weight:500;line-height:1.75;margin:0;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;word-wrap:break-word;font-size:16px;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body{background-color:#fff;color:#303030;font-family:"Noto Sans JP",sans-serif;font-weight:500;line-height:1.75;margin:0;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;word-wrap:break-word;font-size:16px;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%}
 ul,li{list-style:none}
 a:hover,a:visited,a:link,a:active{text-decoration:none}
 [tabindex="-1"]:focus{outline:0 !important}
@@ -494,12 +494,28 @@ template{display:none}
 .midashigopro-mb31{font-family:a-otf-midashi-go-mb31-pr6n,sans-serif;font-weight:600;font-style:normal}
 @font-face{font-family:'DIN Alternate Bold';font-style:normal;font-weight:normal;src:local("DIN Alternate Bold"),url("../fonts/DINAlternate-Bold.woff") format("woff")}
 @font-face{font-family:'bananaslipplus';font-style:normal;font-weight:normal;src:local("DIN Alternate Bold"),url("../fonts/bananaslipplus.otf") format("opentype")}
-.sect_1{background-color:red}
+.page__wrapper .head_nav{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;background-color:#fff}
+.page__wrapper .head_nav .head_logo{width:calc(100% - 120px);text-align:center;padding-bottom:10px}
+.page__wrapper .head_nav .head_logo img{width:273.586px;height:60px}
+.page__wrapper .head_nav .head_contact{width:120px;height:120px;background-color:#d88e9b;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.page__wrapper .head_nav .head_contact .head_contact_item{display:inline-block;text-align:center}
+.page__wrapper .head_nav .head_contact .head_contact_item img{width:33.3333px;height:25px;margin-bottom:8px}
+.page__wrapper .head_nav .head_contact .head_contact_item p{text-align:center;font-family:'Noto Serif JP',serif;font-weight:500;font-size:1rem;color:#fff}
+.sect_1__wrapper{width:100%;position:relative;padding-top:35px}
+.sect_1__wrapper .hero_slider_cont{position:relative}
+.sect_1__wrapper .hero_slider_cont .hero_slider div img{width:100%;height:684px;-o-object-fit:cover;object-fit:cover}
+.sect_1__wrapper .hero_slider_cont .hero_txt{font-weight:700;font-family:"Noto Sans JP",sans-serif;font-size:1.5rem;color:#d88e9b;-webkit-writing-mode:vertical-rl;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;text-orientation:mixed;position:absolute;top:0;right:11%}
+.sect_1__wrapper .hero_slider_cont .hero_txt span{font-weight:700;font-family:"Noto Sans JP",sans-serif;font-size:1.125rem}
+.slick-slide{margin-right:105px;-webkit-transition:all 450ms;transition:all 450ms}
+.slick-active{-webkit-transition:all 450ms;transition:all 450ms;-webkit-transform:rotate(-3deg);transform:rotate(-3deg)}
+.slick-dots{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0;padding:1rem 0;list-style-type:none}
+.slick-dots li{margin:0 .25rem}
+.slick-dots button{display:block;width:10px;height:10px;padding:0;border:0;border-radius:100%;background-color:#dcdcdc;text-indent:-9999px}
+.slick-dots li.slick-active button{background-color:#000}
 @media only screen and (min-width:0) and (max-width:0){.l-header__inner{padding-left:15px;padding-right:15px}
 .l-wrap{padding-left:15px;padding-right:15px}
 .p-introduction__intro .headline__text{font-size:1.625rem}
-}@media only screen and (min-width:751px){body{font-size:15px;min-width:1024px}
-.l-container--under{padding-top:40px}
+}@media only screen and (min-width:751px){.l-container--under{padding-top:40px}
 .l-container.is-column2{margin:0 auto}
 .l-container.is-column3{margin:0 auto}
 .l-header__inner{width:1024px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
@@ -775,6 +791,13 @@ template{display:none}
 .u-pl-40{padding-left:20px !important}
 .u-pl-45{padding-left:22px !important}
 .u-pl-50{padding-left:25px !important}
+.page__wrapper .head_nav{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.page__wrapper .head_nav .head_logo{text-align:left;padding-bottom:0;padding-left:25px}
+.sect_1__wrapper .hero_slider_cont .hero_slider div img{height:684px;-o-object-fit:cover;object-fit:cover}
+.sect_1__wrapper .hero_slider_cont .hero_txt{right:3%}
+.slick-slide{margin-right:80px}
+.slick-active{-webkit-transform:unset;transform:unset}
+}@media only screen and (max-width:500px){.page__wrapper .head_nav .head_logo img{width:80%;height:auto}
 }@-webkit-keyframes loader-text{0%{-webkit-transform:rotate(0);transform:rotate(0)}
 25%{-webkit-transform:rotate(0);transform:rotate(0)}
 50%{-webkit-transform:rotate(180deg);transform:rotate(180deg);color:#fff}
