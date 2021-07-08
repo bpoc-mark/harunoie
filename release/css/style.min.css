@@ -609,6 +609,7 @@ template{display:none}
 .u-d-n-pc{display:none !important}
 .sect_6 .heat__divider .img-2{display:none}
 .sect_7 .procedure__item .row-1 .title br{display:none}
+}@media only screen and (max-width:1091px){.l-wrap{width:100%;padding-left:30px !important;padding-right:30px !important}
 }@media only screen and (max-width:750px){.l-container{display:block}
 .l-container.is-column2{padding-top:20px;display:block}
 .l-container.is-column2 .left,.l-container.is-column2 .right{-webkit-box-flex:1;-ms-flex:1 1 100%;flex:1 1 100%;margin-bottom:30px}
