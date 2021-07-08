@@ -21,5 +21,15 @@ $(document).ready(function () {
     // settings: "unslick"
     // instead of a settings object
     ]
+  }); // 画面幅が375pxより小さい場合、viewportを再設定
+
+  $(window).on('load', function () {
+    var w = $(window).width();
+
+    if (w <= 450) {
+      $('meta[name=viewport]').attr('content', 'width=480');
+    } else {
+      $('meta[name=viewport]').attr('content', 'width=device-width');
+    }
   });
 });
