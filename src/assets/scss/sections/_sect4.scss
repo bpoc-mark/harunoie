@@ -1,0 +1,76 @@
+.sect_4 {
+	overflow: hidden;
+
+	&__overlay {
+		background-color: #d88e9b;
+		margin-top: 40px;
+
+		@include is-sp {
+			margin-top: -2px;
+		}
+	}
+
+	&__flexcon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 25px 0;
+
+		@include is-sp {
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+
+		.forward_slash {
+			padding: 0 20px;
+			display: none;
+
+			@include is-pc {
+				display: block;
+			}
+
+			@include is-sp {
+				display: none;
+			}
+		}
+
+		.h-135 {
+			@include is-sp {
+				min-height: 135px;
+			}
+		}
+	}
+
+	&__ctext {
+
+		.arrow-down {
+			margin: 0 auto;
+			display: block;
+			margin-top: 10px;
+		}
+
+		@include is-sp {
+			flex: 50%;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		.c-heading {
+			@include font-line(14);
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.c-txt {
+			@include font-line(24);
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 600;
+		}
+
+		.arrow-white {
+			color: #fff;
+		}
+	}
+
+}

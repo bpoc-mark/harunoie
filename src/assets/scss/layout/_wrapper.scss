@@ -23,5 +23,10 @@
         width: 700px;
       }
     }
+    @include is-max(1091px){
+      width: 100%;
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
   }
   

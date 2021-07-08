@@ -1,0 +1,289 @@
+.sect_3 {
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+
+	.img-clouds {
+		width: 100%;
+	}
+
+	&__inner {
+		padding-top: 110px;
+		position: relative;
+
+		@include is-sp {
+			padding-top: 10%;
+		}
+	}
+
+	&__flexcont {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include is-sp {
+			flex-direction: column;
+		}
+
+		.c-content {
+			width: 53%;
+
+			@include is-sp {
+				width: 100%;
+			}
+		}
+
+		.l-content {
+			@include is-sp {
+				width: 87%;
+			}
+		}
+
+		.c-image {
+			width: 41%;
+			position: relative;
+
+			@include is-sp {
+				width: 85%;
+				margin-left: 10%;
+			}
+		}
+
+		.c-heading-title {
+			@include font-line(16);
+			font-family: 'Noto Sans JP';
+			font-weight: bold;
+		}
+
+		.c-heading-title-primary {
+			color: #d88e9b;
+		}
+
+		.mb-15 {
+			margin-bottom: 15px;
+
+			@include is-sp {
+				margin-bottom: 0;
+			}
+		}
+
+		.c-heading-text {
+			@include font-line(18);
+			font-family: 'Noto Sans JP';
+		}
+
+		.performance-pc {
+			margin-left: 405px;
+			position: relative;
+			z-index: 150;
+			display: none;
+			width: 50%;
+
+			@include is-pc {
+				display: block;
+			}
+		}
+
+		.performance-sp {
+			position: absolute;
+			top: -3%;
+			left: -17%;
+			display: none;
+			width: 50%;
+
+			@include is-sp {
+				display: block;
+			}
+		}
+	}
+
+	&__right_features {
+		position: absolute;
+		top: 113px;
+		right: -87px;
+
+		@include is-sp {
+			right: 0;
+		}
+
+		.right_fea {
+			@include font-line(28);
+			font-family: 'Noto Sans JP';
+			font-weight: bold;
+			writing-mode: vertical-rl
+		}
+
+		.right-title-primary {
+			color: #d88e9b;
+		}
+	}
+
+	&__relative {
+		position: relative;
+	}
+
+	&__flexcont_2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row-reverse;
+
+		@include is-sp {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.c-content {
+			width: 53%;
+
+			@include is-sp {
+				width: 87%;
+			}
+		}
+
+		.c-image {
+			width: 41%;
+
+			@include is-sp {
+				width: 85%;
+				position: relative;
+			}
+		}
+
+		.c-heading-title {
+			@include font-line(16);
+			font-family: 'Noto Sans JP';
+			font-weight: bold;
+		}
+
+		.c-heading-title-primary {
+			color: #d88e9b;
+		}
+
+		.mb-15 {
+			margin-bottom: 15px;
+
+			@include is-sp {
+				margin-bottom: 0;
+			}
+		}
+
+		.c-heading-text {
+			@include font-line(18);
+			font-family: 'Noto Sans JP';
+		}
+
+		.performance {
+			margin-left: 335px;
+			position: relative;
+			z-index: 150;
+		}
+	}
+
+	.d-image {
+		top: -52px;
+		position: absolute;
+		right: -43px;
+
+		@include is-sp {
+			top: 16px;
+			width: 50%;
+		}
+	}
+
+	.mt-100 {
+		margin-top: 100px;
+
+		@include is-sp {
+			margin-top: 14%;
+		}
+	}
+
+	&__flexcont_3 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include is-sp {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.c-content {
+			width: 53%;
+
+			@include is-sp {
+				width: 87%;
+			}
+		}
+
+		.c-image {
+			width: 61%;
+			margin-right: -234px;
+
+			@include is-sp {
+				width: 100%;
+			}
+		}
+
+		.kit-pc {
+			display: none;
+
+			@include is-pc {
+				display: block;
+			}
+		}
+
+		.c-heading-title {
+			@include font-line(16);
+			font-family: 'Noto Sans JP';
+			font-weight: bold;
+		}
+
+		.c-heading-title-primary {
+			color: #d88e9b;
+		}
+
+		.mb-15 {
+			margin-bottom: 15px;
+
+			@include is-sp {
+				margin-bottom: 0;
+			}
+		}
+
+		.c-heading-text {
+			@include font-line(18);
+			font-family: 'Noto Sans JP';
+		}
+
+		.performance {
+			margin-left: 335px;
+			position: relative;
+			z-index: 150;
+		}
+	}
+
+	.concept-image {
+		top: 41px;
+		position: absolute;
+		right: 504px;
+
+		@include is-sp {
+			top: -25px;
+			right: 83px;
+			width: 32%;
+		}
+	}
+
+	.kit-sp {
+		display: none;
+
+		@include is-sp {
+			display: block;
+		}
+	}
+
+}
