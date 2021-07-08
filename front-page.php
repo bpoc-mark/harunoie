@@ -112,7 +112,27 @@
     <section>6</section>
     <section>7</section>
     <section>8</section>
-    <section>9</section>
+    <section class="sect_9">
+        <div class="sect_9__wrapper">
+            <div class="sect_9__cont flex">
+                <div class="sect_9__cont__item">
+                    <p>virtual reality</p>
+                </div>
+                <div class="sect_9__cont__item">
+                    <p>
+                    はるのいえが大切にしていること。それは、お客さまに「いかにわかりやすく伝えるか」ということです。<br>
+                    <br>
+                    そこで、すべてのお客さまにリアルな立体空間をご体感いただけるよう、「<span>VR</span>」を導入しております。<br>
+                    VRならゴーグルを装着して映像にアクセスするだけで、まるで本当にその空間にいるかのような臨場感を、誰でも簡単に体験できます。<br>
+                    <br>
+                    対面でのお打ち合わせが難しい場合には、当社からゴーグルを貸し出して、ご自宅から映像にアクセスし、VRを体感いただくことも可能です。<br>
+                    完成してからの「こんなはずじゃなかった」「想像していたのと違う」というリスクを避けるためにも、ぜひはるのいえのVRをご体験ください。
+
+                    </p>
+                </div>
+            </div>
+        </div>     
+    </section>
     <section class="sect_10">
         <div class="sect_10__wrapper">
             <div class="sect_10__cont flex">
