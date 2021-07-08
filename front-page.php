@@ -113,5 +113,32 @@
     <section>7</section>
     <section>8</section>
     <section>9</section>
-    <section>10</section>
+    <section class="sect_10">
+        <div class="sect_10__wrapper">
+            <div class="sect_10__cont flex">
+                <div class="sect_10__cont__item">
+                    <a href="">
+                        <img src="<?php echo get_template_directory_uri();?>/release/image/footer/footer_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="sect_10__cont__item">
+                    <p>
+                        長野県須坂市の注文住宅・企画住宅<br>
+                        <span>はるのいえ　(株)池田住建企画</span>
+                    </p>
+                    <p>
+                        〒382-0003長野県須坂市旭ケ丘1-7 <br>
+                        TEL:026-214-7388 <br>
+                        MAIL:harunoensoku@gmail.com
+                    </p>
+                </div>
+                <div class="sect_10__cont__item">
+                    <a href="https://haruno-ie.com/contact" target="_blank">
+                        家づくりのお問い合わせはこちら
+                        <img src="<?php echo get_template_directory_uri();?>/release/image/sect_10/sect_10_btn_arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 <?php get_footer();?>

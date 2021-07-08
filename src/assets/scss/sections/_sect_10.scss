@@ -1,0 +1,101 @@
+.sect_10{
+    &__wrapper{
+        padding-top: 130px;
+        padding-bottom: 115px;
+
+        @include is-sp{
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__cont{
+        width: 560px;
+        margin: 0 auto;
+
+        @include is-max(565px){
+            width: 100%;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        &.flex{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__item{
+            &:nth-of-type(1){
+                @include is-max(565px){
+                   text-align: center;
+                   width: 100%;
+                }
+            }
+
+            &:nth-of-type(2){
+                width: 286px;
+
+                @include is-max(565px){
+                    margin: 65px auto 0;
+                }
+
+                p{
+                    &:nth-of-type(1){
+                        font-weight: 500;
+                        font-family: "Noto Sans JP", sans-serif;
+                        @include font-line(16, 33);
+                        color: #000;
+                        margin-bottom: 25px;
+
+                        span{
+                            font-weight: 700;
+                            @include font-line(20, 33);
+                            
+                        }
+                    }
+
+                    &:nth-of-type(2){
+                        font-weight: 400;
+                        font-family: "Noto Sans JP", sans-serif;
+                        @include font-line(18, 29);
+                        color: #000;
+                    }
+                }
+            }
+
+            &:nth-of-type(3){
+                width: 100%;
+
+                a{
+                    position: relative;
+                    border: 1px solid #d88e9b;
+                    width: 100%;
+                    margin-top: 65px;
+                    display: block;
+                    text-align: center;
+                    padding: 35px 0;
+                    font-weight: 500;
+                    font-family: "Noto Sans JP", sans-serif;
+                    @include font-line(20);
+                    color: #d88e9b;
+    
+                    img{
+                        width: 25px;
+                        height: 8px;
+                        position: absolute;
+                        top: 50%;
+                        right: 13px;
+                        transform: translate(0, -50%);
+                    }
+
+                    @include is-max(565px){
+                        margin-top: 35px;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}

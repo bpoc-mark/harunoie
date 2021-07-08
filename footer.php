@@ -1,6 +1,6 @@
         </div>
         <div class="page__footer">
-            footer
+            <p>©2020 はるのいえ　(株)池田住建企画</p>
         </div>
     </main>
 
