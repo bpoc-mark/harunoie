@@ -1,0 +1,227 @@
+.sect_2{
+
+    &__wrapper{
+        width: 100%;
+        position: relative;
+        padding-top: 100px;
+
+        .l-wrap{
+            padding-left: 0;
+            padding-right: 0;
+
+            @include is-sp{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .sect_2_cont{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .sect_2_item{
+
+                    &:nth-of-type(1){
+                        @include is-max(990px){
+                            width: 45px;
+                        }
+                    }
+
+                    &:nth-of-type(2){
+                        @include is-max(990px){
+                            width: calc(100% - 45px);
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    &:nth-of-type(3){
+                        width: 640px;
+
+                        @include is-max(990px){
+                            width: 100%;
+                        }
+
+                        @include is-sp{
+                            width: 100%;
+                        }
+                    }
+
+                    .txt_concept{
+                        font-weight: 700;
+                        font-family: "Noto Sans JP", sans-serif;
+                        @include font-line(28);
+                        color: #d88e9b;
+                        writing-mode: vertical-rl;
+                        text-orientation: mixed;
+                    }
+
+                    .txt_sub{
+                        font-weight: 700;
+                        font-family: "Noto Sans JP", sans-serif;
+                        @include font-line(46);
+                        letter-spacing: 16px;
+                        color: #d88e9b;
+                        writing-mode: vertical-rl;
+                        text-orientation: mixed;
+
+                        @include is-sp{
+                            @include font-line(36);
+                        }
+                    }
+
+                    .txt_des{
+                        font-weight: 400;
+                        font-family: "Noto Sans JP", sans-serif;
+                        @include font-line(18, 29);
+                        color: #000;
+
+                        span{
+                            color: #d88e9b;
+                        }
+                    }
+
+                    .sect_2_sub_cont{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 75px;
+
+                        @include is-sp{
+                            margin-top: 50px;
+                        }
+
+                        .sect_2_sub_item{
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            border: 1px solid #d88e9b;
+                            border-radius: 20px;
+                            padding-left: 40px;
+                            padding-bottom: 25px;
+                            margin-bottom: 20px;
+
+                            @include is-sp{
+                                padding-left: 20px;
+                                padding-bottom: 15px;
+                            }
+
+                            .sub_itm{
+                                position: relative;
+                                &:nth-of-type(1){
+                                    background-color: #d88e9b;
+                                    padding: 20px 10px;
+                                    margin-right: 35px;
+                                    position: relative;
+
+                                    @include is-sp{
+                                        margin-right: 20px;
+                                        padding: 15px 10px;
+                                    }
+
+                                    &::after{
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 10px;
+                                        background-color: #fff;
+                                        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                                    }
+
+                                    p{
+                                        text-align: center;
+                                        font-family: 'bananaslipplus';
+                                        @include font-line(18);
+                                        color: #fff;
+
+                                        @include is-sp{
+                                            @include font-line(14);
+                                        }
+
+                                        span{
+                                            @include font-line(35, 20);
+
+                                            @include is-sp{
+                                                @include font-line(26, 20);
+                                            }
+                                        }  
+                                    }
+                                }
+                                &:nth-of-type(2){
+                                    width: 100%;
+                                    padding-top: 30px;
+
+                                    @include is-sp{
+                                        padding-top: 20px;
+                                    }
+
+                                    p{
+                                        font-weight: 700;
+                                        font-family: "Noto Sans JP", sans-serif;
+                                        @include font-line(24, 33);
+                                        color: #d88e9b;
+
+                                        @include is-sp{
+                                            @include font-line(20, 33);
+                                        }
+
+                                        span{
+                                            @include font-line(32, 33);
+                                            background: linear-gradient(rgba(0, 0, 0, 0) 70%, #ffe600 25%);
+
+                                            @include is-sp{
+                                                @include font-line(24, 33);
+                                            }
+                                        }
+                                    }
+
+                                    img{
+                                        position: absolute;
+                                        top: 30px;
+                                        right: 10px;
+
+                                        @include is-sp{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(1){
+                                .sub_itm{
+                                    img{
+                                        width: 110px;
+                                        height: 60px;
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(2){
+                                .sub_itm{
+                                    img{
+                                        top: 40px;
+                                        right: 30px;
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(3){
+                                .sub_itm{
+                                    img{
+                                        top: 40px;
+                                        right: 30px;
+                                        width: 45px;
+                                        height: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
