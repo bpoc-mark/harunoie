@@ -180,7 +180,7 @@
         <div class="sect_4__overlay">
             <div class="l-wrap">
                 <div class="sect_4__flexcon">
-                    <a href="" class="sect_4__ctext h-135">
+                    <a href="#sect_5" class="sect_4__ctext h-135">
                         <p class="c-heading">any plan</p>
                         <p class="c-txt">プラン</p>
                         <!-- <p class="arrow-white">🠗</p> -->
@@ -189,7 +189,7 @@
                     </a>
                     <img class="forward_slash"
                         src="<?php echo get_template_directory_uri(); ?>/release/image/sect_4/forward_slash_img.png" alt="">
-                    <a href="" class="sect_4__ctext h-135">
+                    <a href="#sect_6" class="sect_4__ctext h-135">
                         <p class="c-heading">performance</p>
                         <p class="c-txt">性能・仕様</p>
                         <img class="arrow-down"
@@ -197,7 +197,7 @@
                     </a>
                     <img class="forward_slash"
                         src="<?php echo get_template_directory_uri(); ?>/release/image/sect_4/forward_slash_img.png" alt="">
-                    <a href="" class="sect_4__ctext">
+                    <a href="#sect_7" class="sect_4__ctext">
                         <p class="c-heading">procedure</p>
                         <p class="c-txt">家づくりの流れ</p>
                         <img class="arrow-down"
@@ -205,7 +205,7 @@
                     </a>
                     <img class="forward_slash"
                         src="<?php echo get_template_directory_uri(); ?>/release/image/sect_4/forward_slash_img.png" alt="">
-                    <a href="" class="sect_4__ctext">
+                    <a href="#sect_8" class="sect_4__ctext">
                         <p class="c-heading">virtual reality</p>
                         <p class="c-txt">V　R</p>
                         <img class="arrow-down"
@@ -215,7 +215,7 @@
             </div>
         </div>
     </section>
-    <section class="sect_5">
+    <section class="sect_5" id="sect_5">
         <div class="sect_5_mw14">
             <div class="l-wrap">
                 <div class="flexcon">
@@ -240,16 +240,28 @@
                     </div>
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_1.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_1.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
+
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 1',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -260,17 +272,28 @@
                 <div class="flexcon_1">
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_2.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_2.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 2',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="context">
@@ -295,17 +318,28 @@
                 <div class="flexcon_1">
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_3.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_3.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 3',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="context">
@@ -328,17 +362,28 @@
                 <div class="flexcon_1">
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_4.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_4.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 4',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="context">
@@ -388,16 +433,28 @@
                     </div>
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_5.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_5.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
+
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 5',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -408,17 +465,28 @@
                 <div class="flexcon_1">
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_6.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_6.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 6',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="context">
@@ -467,16 +535,28 @@
                     </div>
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_7.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_7.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
+
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 7',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -487,17 +567,28 @@
                 <div class="flexcon_1">
                     <div class="c-image">
                         <div class="img_slider">
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_8.png"
-                                    alt="">
-                            </div>
-                            <div>
-                                <img class="forward_slash"
-                                    src="<?php echo get_template_directory_uri(); ?>/release/image/sect_5/slick_img_8.png"
-                                    alt="">
-                            </div>
+                            <?php
+                            $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
+                            $args = array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 10,
+                                'category_name' => 'Plan 8',
+                                'paged' => $paged,
+                            );
+
+                            $the_query = new WP_Query($args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) : ?>
+
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div>
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="context">
@@ -526,9 +617,325 @@
             </div>
         </div>
     </section>
-    <section>6</section>
-    <section>7</section>
-    <section>8</section>
+    <section class="sect_6" id="sect_6">
+        <img class="sect_6__image" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/asset_1.png" alt="">
+        <div class="l-wrap">
+            <p class="sect_6__text">performance</p>
+            <div class="heat">
+                <div class="heat__col-1">
+                    <p class="title">熱性能「HEAT20 G2」</p>
+                    <p class="content">はるのいえの企画住宅は、『HEAT20 G2』が標準仕様。
+                        『HEAT20』とは住宅に関する有識者を集め2009年にできた民間団体で、断熱性能に関して「G1」「G2」「G3」の3段階の基準が設定されています。
+                        各地域における代表的な暖房方式を調査・検討したうえで、「冬期間の室内温度環境」と「省エネルギー性能」を踏まえて設定されており、 G1＜G2＜G3と数字が大きくなるほど断熱性能は高くなります。
+                        <br><br>
+                        現在、日本には大きく分けて3つの「断熱性能の基準」があります。
+                        なかでも、もっとも低い基準が『建築物のエネルギー消費性能の向上に関する法律（建築物省エネ法）』による「平成28年基準」。
+                        その次が「ZEH（ゼッチ）基準」。 ZEH（ゼッチ）とは“ネット・ゼロ・エネルギー・ハウス”の略で、消費エネルギーよりもつくるエネルギーが多くなることを目指した住宅のこと。
+                        そして、最も高性能な基準が「HEAT20の基準」です。
+                    </p>
+                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table.png" alt="">
+                    <p class="g2">『HEAT20 G2』対応の、弊社の断熱仕様は以下のとおり。</p>
+
+                    <table>
+                        <tr>
+                            <th>基礎</th>
+                            <td>スタイロフォーム100mm</td>
+                        </tr>
+                        <tr>
+                            <th>天井</th>
+                            <td>高性能グラスウール16K、310mm</td>
+                        </tr>
+                        <tr>
+                            <th>壁</th>
+                            <td>ネオマフォーム66mm＋45mmのダブル断熱</td>
+                        </tr>
+                        <tr>
+                            <th>窓</th>
+                            <td>樹脂製サッシ/トリプルガラス、複層ガラス</td>
+                        </tr>
+                    </table>
+                    <p class="note">注）今後、変更の可能性もあります。</p>
+                    <p class="heat20">なお、はるのいえでは建物の外皮性能だけでなく
+                        <span class="heat_loss">日射熱・生活熱・換気による熱損失</span>
+                        など、さまざまな要素を加味してシミュレーションを繰り返すことで、『HEAT20』の厳しい水準をクリアしています。
+                    </p>
+                </div>
+                <div class="heat__col-2">
+                    <p class="title">耐震等級「3」</p>
+                    <p class="content">建築基準法で規定された耐震性能は「震度6～7の大地震でも倒壊・崩壊しない」ことを基準としたもの。
+                        これは『耐震等級1』に該当し、3段階に分かれた耐震等級の中でもっとも性能が低いと位置付けられています。
+                    </p>
+                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table-2.png" alt="">
+                    <p class="seismic_grade">
+                        震度7の大地震で倒壊しないなら、『耐震等級1』で十分と考える方もいらっしゃるかもしれません。<br>
+                        しかし、2016年の熊本地震では繰り返す揺れによって『耐震等級2』の住宅が倒壊しています。<br>
+                        これにより、『耐震等級1』はあくまでも避難時間をかせぐための耐震性能に過ぎず、その後も住み続ける上では、強度として十分でないことが実証されました。<br>
+                        <br>
+                        はるのいえの企画住宅は、『<span>耐震等級3</span>』が<span>標準仕様。</span>（※条件によっては対応できない場合がございます）<br>
+                        壁量計算だけでなく、しっかりと<span>構造計算</span>（許容応力度計算）をして地震に対する耐力を確認しています。<br>
+                        <br>
+                        なお、『耐震等級3相当』とは、耐震等級3と同等の性能を持ってはいるものの、住宅性能評価機関への申請をせず、正式な認定を受けていない建物のことをいいます。<br>
+                        『耐震等級3』の認定を受けた場合、地震保険の掛け金が50％に割引されるほか、フラット35の融資を受ける際に金利優遇がある、贈与税の非課税枠が加算対象となるなどのメリットも。<br>
+                        <br>
+                        より高い安心を求める方は、構造計算によって強度を証明された、はるのいえの高耐震住宅をご検討ください。
+                    </p>
+                </div>
+                <div class="fuel">
+                    <div class="fuel__col-1">
+                        <p class="title">燃費で家の性能を比べる</p>
+                        <p class="desc">「PLAN01」に暮らす家庭での１年間の光熱費を想定した結果です。<br>
+                            省エネ基準の家との差を比べてみてください。
+                        </p>
+                    </div>
+                    <div class="fuel__col-2">
+                        <p class="title">※光熱費の計算は下表の単価設定により算定することを基本とします。</p>
+                        <table class="table_1">
+                            <tr>
+                                <td>
+                                    電気
+                                </td>
+                                <td>
+                                    ガス
+                                </td>
+                                <td>
+                                    灯油
+                                </td>
+                                <td>
+                                    売電
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    27円/kWh
+                                </td>
+                                <td>
+                                    180円/㎡
+                                </td>
+                                <td>
+                                    64円/ℓ
+                                </td>
+                                <td>
+                                    2021年度 19円/kW
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table_2 sp">
+                            <tr>
+                                <td class="first">
+                                    <!-- <p class="pl01">PLAN01</p> -->
+                                </td>
+                                <td class="second second_2line_border">
+                                    <p class="second_head">省エネ基準の家</p>
+                                    <p class="second_sub">電気・ガス・灯油</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">
+                                    全館冷暖房
+                                </td>
+                                <td  class="second second_price second_2line_border">
+                                    ¥456,729
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first">
+                                    間欠冷暖房
+                                </td>
+                                <td class="second second_price second_2line_border">
+                                    ¥370,376
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table_2">
+                            <tr>
+                                <td rowspan="2" class="first second_2line_border_sp">
+                                    <p class="pl01">PLAN01</p>
+                                </td>
+                                <td rowspan="2" class="second second_2line_border sp">
+                                    <p class="second_head">省エネ基準の家</p>
+                                    <p class="second_sub">電気・ガス・灯油</p>
+                                </td>
+                                <td colspan="4">
+                                    <p class="second_color">はるのいえの企画住宅(全館冷暖房)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="br_left_dotted">
+                                    電気
+                                </td>
+                                <td class="br_left_dotted">
+                                    自家発電
+                                </td>
+                                <td class="br_left_dotted">
+                                    売電
+                                </td>
+                                <td class="br_left_dotted">
+                                    合計
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first second_2line_border_sp">
+                                    全館冷暖房
+                                </td>
+                                <td  class="second second_price second_2line_border sp">
+                                    ¥456,729
+                                </td>
+                                <td >
+                                    ¥192,537
+                                </td>
+                                <td class="br_lt_dotted">
+                                    <p class="second_color">
+                                        ¥-53,196
+                                    </p>
+                                </td>
+                                <td class="br_lt_dotted">
+                                    <p class="second_color">
+                                        ¥-88,247
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="bold">¥51,094</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first second_2line_border_sp">
+                                    間欠冷暖房
+                                </td>
+                                <td class="second second_price second_2line_border sp">
+                                    ¥370,376
+                                </td>
+                                <td>
+                                    ¥158,467
+                                </td>
+                                <td class="br_lt_dotted"> 
+                                    <p class="second_color">¥-45,370</p>
+                                </td>
+                                <td class="br_lt_dotted">
+                                    <p class="second_color">¥-94,334</p>
+                                </td>
+                                <td>
+                                    <p class="bold">¥18,763</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- <img class="table-3" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table-3.png" alt=""> -->
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table-4.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect_7" id="sect_7">
+        <div class="l-wrap">
+            <p class="sect_7__text">procedure</p>
+            <div class="steps">
+                <!-- STEP 1 -->
+                <div class="procedure__left afterimage">
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">ヒアリング</p>
+                        </div>
+                        <p class="desc">まずは、あなたの理想の家づくりについてお聞かせください。
+                            こだわりや予算をお伺いし、企画住宅で話を進めたいということであれば、この時点である程度プランの目星をつけておきます。<br>
+                            お打ち合わせは対面でもオンラインでもOK。ご家族皆さまでご参加ください。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="procedure__right afterimage">
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">資金計画</p>
+                        </div>
+                        <p class="desc">家づくりの基本は資金計画。
+                            はるのいえの資金計画は「家を建てるための計画」ではなく、「家を建てても今の生活をキープしていくための計画」です。
+                            20年後、30年後まで考えた、無理のない資金計画をご提案いたします。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="procedure__left afterimage">
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">土地探し＋プラン選び（VR）</p>
+                        </div>
+                        <p class="desc">これから土地を購入されるお客さまには、土地探しもサポートいたします。<br>
+                            土地の形状によって配置できるプランも変わってきますので、土地探しと並行してプラン選びを進めていきましょう。
+                            プランごとのVR（バーチャル・リアリティ）もご体験いただけます！
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="procedure__right afterimage">
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">シミュレーション</p>
+                        </div>
+                        <p class="desc">間取りや仕様が同じ建物であっても、敷地が違えば日照や通風の条件は異なります。<br>
+                            最適な温熱環境を整えるため、企画住宅であっても日当たりや風通し、建物燃費などのシミュレーションはしっかりと行います。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 5 -->
+                <div class="procedure__left afterimage">
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">着工</p>
+                        </div>
+                        <p class="desc">プラン決定後、構造計算や各種申請業務などに1ヶ月半〜程度のお時間をいただきます。<br>
+                            施工期間中は工事の進捗状況をこまめにお知らせいたしますので、安心しておまかせください。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 6 -->
+                <div class="procedure__right afterimage">
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">自社検査＋<br>第三者機関による検査</p>
+                        </div>
+                        <p class="desc">はるのいえでは、自社検査のほか第三者機関による検査も行っています。<br>
+                            検査は全7回177項目。雨漏りや水漏れしやすい部分と躯体の強度、省エネに関する部分を重点的にチェックします。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 7 -->
+                <div class="procedure__left afterimage">
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">お引き渡し</p>
+                        </div>
+                        <p class="desc">完成検査が終わったら、いよいよお引き渡しです。<br>
+                            夏涼しく冬暖かい、省エネの家。はるのいえの企画住宅で、心地よいくらしをスタートしてください！
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 8 -->
+                <div class="procedure__right afterimage">
+                    <p class="step_9_txt">※それぞれ必要な期間には変動がございます。</p>
+                    <div class="procedure__item">
+                        <div class="row-1">
+                            <p class="title">アフターサービス</p>
+                        </div>
+                        <p class="desc">半年、1年、2年、5年、10年の全5回、第三者機関がお住まいの点検に訪問いたします。<br>
+                            保証は維持管理型保証（最大50年保証）、短期保証（2年）のほか、保険代理店との提携による充実した安心サービスもご案内しております。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect_8" id="sect_8">
+        <div class="sect_8_mw14">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ILgsuZ0jWdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
     <section class="sect_9">
         <div class="sect_9__wrapper">
             <div class="sect_9__cont flex">
