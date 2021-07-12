@@ -1,0 +1,390 @@
+.sect_5 {
+	overflow: hidden;
+
+	background-color: #faf5f5;
+	position: relative;
+
+	@include is-sp{
+		padding-bottom: 50px;
+	}
+
+	.right_fea_none {
+		display: none;
+
+		@include is-sp {
+			@include font-line(28);
+			font-family: 'Noto Sans JP';
+			font-weight: bold;
+			writing-mode: vertical-rl;
+			display: block;
+			position: absolute;
+			left: 20px;
+		}
+	}
+
+	.right-title-primary {
+		color: #d88e9b;
+	}
+
+	.slick-dots {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 1rem 0;
+		list-style-type: none;
+
+		li {
+			margin: 0 0.25rem;
+		}
+
+		button {
+			display: block;
+			width: 10px;
+			height: 10px;
+			padding: 0;
+			border: none;
+			border-radius: 100%;
+			background-color: #DCDCDC;
+			text-indent: -9999px;
+		}
+
+		li.slick-active button {
+			background-color: #d88e9b;
+		}
+	}
+
+	.sect_5_mw14{
+		position: relative;
+		.l-wrap{
+			@include is-sp{
+				padding-left: 80px !important;
+			}
+			.flexcon {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				width: 100%;
+				padding-top: 220px;
+
+				@include is-max(1300px){
+					padding-top: 0;
+				}
+
+				@include is-max(1000px){
+					padding-top: 50px;
+					align-items: center;
+				}
+
+				@include is-sp {
+					flex-direction: column-reverse;
+					padding-top: 60px;
+				}
+		
+				.context {
+					width: 100%;
+					
+					@include is-sp {
+						width: 100%;
+						padding-top: 10px;
+					}
+
+					.c-head{
+						width: 500px;
+
+						@include is-max(1000px){
+							width: 95%;
+						}
+
+						@include is-sp{
+							width: 100%;
+							height: auto;
+						}
+
+						.c-heading-plan {
+							@include font-line(14);
+							font-family: 'Noto Serif JP', serif;
+							color: #d88e9b;
+							font-weight: 500;
+
+							span {
+								@include font-line(20);
+								color: #d88e9b;
+								font-weight: 500;
+							}
+						}
+				
+						.c-heading-title {
+							@include font-line(22, 38);
+							font-family: 'Noto Sans JP', sans-serif;
+							font-weight: 500;
+							color: #000
+						}
+					}
+					.border-line {
+						border-color: #d88e9b;
+						margin: 15px 0;
+						// border-bottom: 1px solid #d88e9b;
+
+					}
+			
+					.c-txt {
+						width: 500px;
+						@include font-line(16, 26);
+						font-family: 'Noto Sans JP', sans-serif;
+						font-weight: 400;
+						color: #000;
+
+						@include is-max(1000px){
+							width: 95%;
+						}
+
+						@include is-sp{
+							width: 100%;
+							height: auto;
+						}
+					}
+				}
+		
+				.c-image {
+					width: 685px;
+					height: 560px;
+					position: absolute;
+					top: 0;
+					right: 0;
+
+					@include is-max(1300px){
+						position: relative;
+						width: 45%;
+						height: auto;
+					}
+
+					@include is-sp{
+						width: 100%;
+						height: auto;
+					}
+
+					.img_slider{
+						div{
+							img{
+								width: 100%;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(3), &:nth-of-type(5){
+			.l-wrap{
+				.flexcon{
+					padding-top: 50px;
+					margin-top: 50px;
+
+					@include is-sp{
+						padding-top: 0;
+					}
+					.context{
+						.c-head{
+							width: 60.55%;
+
+							@include is-max(1000px){
+								width: 95%;
+							}
+
+							@include is-sp{
+								width: 100%;
+								height: auto;
+							}
+						}
+						.c-txt{
+							width: 60.55%;
+							@include is-max(1300px){
+								width: 90%;
+							}
+
+							@include is-sp{
+								width: 100%;
+								height: auto;
+							}
+						}
+					}
+					.c-image {
+						width: 530px;
+						height: 440px;
+						position: absolute;
+						top: 0;
+						right: 0;
+
+						@include is-max(1300px){
+							position: relative;
+							width: 45%;
+							height: auto;
+						}
+
+						@include is-sp{
+							width: 100%;
+							height: auto;
+						}
+
+						.img_slider{
+							div{
+								img{
+									width: 100%;
+									object-fit: cover;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.sect_5_mw_1090{
+		.l-wrap{
+			position: relative;
+			@include is-sp{
+				padding-left: 80px !important;
+				position: unset;
+			}
+			.flexcon_1 {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				flex-wrap: wrap;
+				width: 100%;
+				margin-top: 100px;
+
+				@include is-max(1000px){
+					margin-top: 50px;
+				}
+
+				@include is-sp{
+					margin-top: 70px;
+				}
+		
+				.context {
+					width: 52%;
+					padding-bottom: 40px;
+
+					@include is-sp {
+						width: 100%;
+					}
+	
+					.c-head{
+						padding-left: 60px;
+						@include is-sp{
+							padding-left: 0
+						}
+
+						.c-heading-plan {
+							@include font-line(14);
+							font-family: 'Noto Serif JP', serif;
+							color: #d88e9b;
+							font-weight: 500;
+	
+							span {
+								@include font-line(20);
+								color: #d88e9b;
+								font-weight: 500;
+							}
+						}
+				
+						.c-heading-title {
+							@include font-line(22, 38);
+							font-family: 'Noto Sans JP', sans-serif;
+							font-weight: 500;
+							color: #000
+						}
+					}
+					.border-line {
+						border-color: #d88e9b;
+						margin: 15px 0;
+					}
+			
+					.c-txt {
+						@include font-line(16, 26);
+						font-family: 'Noto Sans JP', sans-serif;
+						font-weight: 400;
+						color: #000;
+						padding-left: 60px;
+						@include is-sp{
+							padding-left: 0
+						}
+	
+						@include is-sp{
+							width: 100%;
+							height: auto;
+						}
+					}
+				}
+		
+				.c-image {
+					width: 48%;
+					
+					@include is-sp{
+						width: 100%;
+						height: auto;
+					}
+
+					.img_slider{
+						div{
+							img{
+								width: 100%;
+								height: auto;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+
+				&:nth-of-type(2){
+					flex-direction: row-reverse;
+					@include is-sp{
+						margin-top: 30px;
+					}
+
+					.context{
+						.c-head{
+							padding-left: 0;
+						}
+						.c-txt{
+							padding-left: 0;
+							padding-right: 60px;
+
+							@include is-sp{
+								padding-right: 0;
+							}
+						}
+					}
+				}
+				&:nth-of-type(3){
+					@include is-sp{
+						margin-top: 30px;
+					}
+				}
+			}
+
+			.right_features{
+				@include font-line(28);
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight: 700;
+				writing-mode: vertical-rl;
+				position: absolute;
+				top: 0;
+				right: -90px;
+
+				@include is-max(1090px){
+					right: -15px;
+				}
+
+				@include is-sp{
+					right: unset;
+					left: 17px;
+					top: 60px;
+				}
+			}
+		}
+	}
+}

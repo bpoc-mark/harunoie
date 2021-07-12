@@ -21,6 +21,13 @@ $(document).ready(function () {
     // settings: "unslick"
     // instead of a settings object
     ]
+  });
+  $(".img_slider").slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1
   }); // 画面幅が375pxより小さい場合、viewportを再設定
 
   $(window).on('load', function () {
