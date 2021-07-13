@@ -680,7 +680,7 @@ template{display:none}
 .sect_5 .slick-dots li{margin:0 .25rem}
 .sect_5 .slick-dots button{display:block;width:10px;height:10px;padding:0;border:0;border-radius:100%;background-color:#dcdcdc;text-indent:-9999px}
 .sect_5 .slick-dots li.slick-active button{background-color:#d88e9b}
-.sect_5 .sect_5_mw14{position:relative}
+.sect_5 .sect_5_mw14{position:relative;max-width:1400px;margin:0 auto}
 .sect_5 .sect_5_mw14 .l-wrap .flexcon{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;width:100%;padding-top:220px}
 .sect_5 .sect_5_mw14 .l-wrap .flexcon .context{width:100%}
 .sect_5 .sect_5_mw14 .l-wrap .flexcon .context .c-head{width:500px}

@@ -55,6 +55,8 @@
 
 	.sect_5_mw14{
 		position: relative;
+		max-width: 1400px;
+		margin: 0 auto;
 		.l-wrap{
 			@include is-sp{
 				padding-left: 80px !important;
