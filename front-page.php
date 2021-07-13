@@ -120,6 +120,9 @@
                             また、自然エネルギーを活用するなど省エネ性の向上にも取り組んでいるため、住み始めてからのランニングコストを大幅に抑えることも可能です。
                         </p>
                     </div>
+                    <!-- <div class="right_features_sp"> -->
+                        <p class="right_fea right-title-primary">features</p>
+                    <!-- </div> -->
                     <div class="c-image">
                         <img class="performance-pc" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_3/performance_imgtxt.png" alt="Performance">
                         <img class="kit" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_3/performance_img.png" alt="">
@@ -170,7 +173,7 @@
                     
                 </div>
             </div>
-            <div class="sect_3__right_features">
+            <div class="right_features_pc">
                 <p class="right_fea right-title-primary">features</p>
             </div>
         </div>
@@ -933,7 +936,8 @@
     </section>
     <section class="sect_8" id="sect_8">
         <div class="sect_8_mw14">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4tnf8FMd2Wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img class="img-clouds-pc" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_8/vr_video.png" alt="">
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4tnf8FMd2Wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
     </section>
     <section class="sect_9">
