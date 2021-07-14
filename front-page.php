@@ -685,144 +685,60 @@
                 </div>
                 <div class="fuel">
                     <div class="fuel__col-1">
-                        <p class="title">燃費で家の性能を比べる</p>
-                        <p class="desc">「PLAN01」に暮らす家庭での１年間の光熱費を想定した結果です。<br>
-                            省エネ基準の家との差を比べてみてください。
+                        <p class="title">
+                            燃費で家の<br>
+                            性能を比べる
+                        </p>
+                        <p class="desc">HEAT20 G2基準の「PLAN05」に暮らす家庭と、省エネ基準同等プランの家に暮らす家庭の一年間の光熱費を想定してみました。その差を比べてみてください。
                         </p>
                     </div>
                     <div class="fuel__col-2">
-                        <p class="title">※光熱費の計算は下表の単価設定により算定することを基本とします。</p>
-                        <table class="table_1">
-                            <tr>
-                                <td>
-                                    電気
-                                </td>
-                                <td>
-                                    ガス
-                                </td>
-                                <td>
-                                    灯油
-                                </td>
-                                <td>
-                                    売電
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    27円/kWh
-                                </td>
-                                <td>
-                                    180円/㎡
-                                </td>
-                                <td>
-                                    64円/ℓ
-                                </td>
-                                <td>
-                                    2021年度 19円/kW
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="table_2 sp">
-                            <tr>
-                                <td class="first">
-                                    <!-- <p class="pl01">PLAN01</p> -->
-                                </td>
-                                <td class="second second_2line_border">
-                                    <p class="second_head">省エネ基準の家</p>
-                                    <p class="second_sub">電気・ガス・灯油</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="first">
-                                    全館冷暖房
-                                </td>
-                                <td  class="second second_price second_2line_border">
-                                    ¥456,729
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="first">
-                                    間欠冷暖房
-                                </td>
-                                <td class="second second_price second_2line_border">
-                                    ¥370,376
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="table_2">
-                            <tr>
-                                <td rowspan="2" class="first second_2line_border_sp">
-                                    <p class="pl01">PLAN01</p>
-                                </td>
-                                <td rowspan="2" class="second second_2line_border sp">
-                                    <p class="second_head">省エネ基準の家</p>
-                                    <p class="second_sub">電気・ガス・灯油</p>
-                                </td>
-                                <td colspan="4">
-                                    <p class="second_color">はるのいえの企画住宅(全館冷暖房)</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="br_left_dotted">
-                                    電気
-                                </td>
-                                <td class="br_left_dotted">
-                                    自家発電
-                                </td>
-                                <td class="br_left_dotted">
-                                    売電
-                                </td>
-                                <td class="br_left_dotted">
-                                    合計
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="first second_2line_border_sp">
-                                    全館冷暖房
-                                </td>
-                                <td  class="second second_price second_2line_border sp">
-                                    ¥456,729
-                                </td>
-                                <td >
-                                    ¥192,537
-                                </td>
-                                <td class="br_lt_dotted">
-                                    <p class="second_color">
-                                        ¥-53,196
-                                    </p>
-                                </td>
-                                <td class="br_lt_dotted">
-                                    <p class="second_color">
-                                        ¥-88,247
-                                    </p>
-                                </td>
-                                <td>
-                                    <p class="bold">¥51,094</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="first second_2line_border_sp">
-                                    間欠冷暖房
-                                </td>
-                                <td class="second second_price second_2line_border sp">
-                                    ¥370,376
-                                </td>
-                                <td>
-                                    ¥158,467
-                                </td>
-                                <td class="br_lt_dotted"> 
-                                    <p class="second_color">¥-45,370</p>
-                                </td>
-                                <td class="br_lt_dotted">
-                                    <p class="second_color">¥-94,334</p>
-                                </td>
-                                <td>
-                                    <p class="bold">¥18,763</p>
-                                </td>
-                            </tr>
-                        </table>
-                        <!-- <img class="table-3" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table-3.png" alt=""> -->
-                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table-4.png" alt=""> -->
+                        <!-- BOX 1 -->
+                        <div class="fuel__col-2__box-1">
+                            <p class="title">省エネ基準の家</p>
+                            <p class="box_cont">
+                                <span class="year">年間</span>
+                                <span class="price">¥383,008-</span>
+                            </p>
+                        </div>
+                        <!-- BOX 2 -->
+                        <div class="fuel__col-2__box-2">
+                            <p class="title">HEAT20 G2の家</p>
+                            <p class="box_cont">
+                                <span class="year">年間</span>
+                                <span class="f20">¥165,341-</span>
+                            </p>
+                            <div class="box_cont_2">
+                                <p class="year">省エネ基準の家より</p>
+                                <p class="price">¥217,667-<span style="color: #D88E9B; font-weight: bold;">お得</span></p>
+                            </div>
+                        </div>
+                        <!-- BOX 3 -->
+                        <div class="fuel__col-2__box-3">
+                            <p class="title">HEAT20 ZEH仕様の家</p>
+                            <p class="box_cont">
+                                <span class="year">年間</span>
+                                <span class="price">¥77,762-</span>
+                            </p>
+                            <div class="box_cont_2">
+                                <p class="year">省エネ基準の家より</p>
+                                <p class="price">¥305,246- <span style="color: #D88E9B; font-weight: bold;">お得</span></p>
+                            </div>
+                            <p class="offer">※太陽光発電システム 1kwあたり税込173,533円でご提供しています。</p>
+                        </div>
+                    </div>
+                    <div class="methods">
+                        <ul>
+                            <li>
+                                ※すべて全館冷暖房（住宅全体を24時間、冬季は20℃以上、夏季は27℃以下に維持して、年間を通じて室内環境を健康で快適な状態で維持する空調方法）
+                            </li>
+                            <li>
+                                ※光熱費の計算は 電気27円/kwh、ガス180円/㎡、灯油64円/ℓ、売電2021年度19円/kWの単価設定により算定することを基本とします。
+                            </li>
+                            <li>
+                                ※この計算結果は、標準モデル生活を行なった場合の計算結果であり、実際の燃費を保証するものではありません。
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
