@@ -9,7 +9,7 @@
                     $args = array(
                         'post_type' => 'post',
                         'post_status' => 'publish',
-                        'posts_per_page' => 4,
+                        'posts_per_page' => 10,
                         'category_name' => 'Hero',
                         'paged' => $paged,
                     );
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="sub_itm">
                                     <p>
-                                        <span>多数あるプラン</span>の中から<br>
+                                        <span class="highlight">多数あるプラン</span>の中から<br>
                                         ライフスタイルに合わせて選べる
                                     </p>
                                     <img src="<?php echo get_template_directory_uri();?>/release/image/sect_2/sect_2_itm_1.png" alt="">
@@ -80,7 +80,7 @@
                                 <div class="sub_itm">
                                     <p>
                                         同じデザイン、間取り、性能でも<br>
-                                        自由設計より<span>価格がお手頃</span>
+                                        自由設計より<span class="highlight">価格がお手頃</span>
                                     </p>
                                     <img src="<?php echo get_template_directory_uri();?>/release/image/sect_2/sect_2_itm_2.png" alt="">
                                 </div>
@@ -94,8 +94,8 @@
                                 </div>
                                 <div class="sub_itm">
                                     <p>
-                                        全棟『<span>耐震等級3</span>』の高耐震、<br>
-                                        『<span>HEAT20 G2</span>』対応の<span>高断熱</span>
+                                        全棟<span class="quote-left">『</span><span class="highlight">耐震等級3</span><span class="quote-right">』</span>の高耐震、<br>
+                                        <span class="quote-left">『</span><span class="highlight">HEAT20 G2</span><span class="quote-right">』</span>対応の<span class="highlight">高断熱</span>
                                     </p>
                                     <img src="<?php echo get_template_directory_uri();?>/release/image/sect_2/sect_2_itm_3.png" alt="">
                                 </div>
@@ -107,8 +107,8 @@
         </div>       
     </section>
     <section class="sect_3">
-        <img class="img-clouds-pc" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_3/top_house_1.png" alt="">
-        <img class="img-clouds-sp" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_3/top_house_sp.png" alt="">
+        <img class="img-clouds-pc" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_3/top_house_1.svg" alt="">
+        <img class="img-clouds-sp" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_3/top_house_sp.svg" alt="">
         <div class="l-wrap">
             <div class="sect_3__inner">
                 <div class="sect_3__flexcont">

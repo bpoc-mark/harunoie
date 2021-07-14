@@ -101,7 +101,7 @@
 			}
 
 			.content {
-				font-weight: 400;
+				font-weight: 500;
 				padding: 20px 0 50px 0;
 				@include font-line(18, 29.7);
 			}
@@ -126,18 +126,22 @@
 						font-weight: 700;
 						@include font-line(16);
 						color: #d88e9b;
-						border-top: 1px solid #d88e9b;
-						border-bottom: 1px solid #d88e9b;
-						border-right: 1px dotted #d88e9b;
+						border-top: 1px solid #000;
+						border-bottom: 1px solid #000;
+						border-right: 1px dotted #000;
 					}
 					td{
 						width: calc(100% - 65px);
-						font-weight: 400;
+						font-weight: 500;
 						@include font-line(16);
 						color: #000;
 						padding: 10px;
-						border-top: 1px solid #d88e9b;
-						border-bottom: 1px solid #d88e9b;
+						border-top: 1px solid #000;
+						border-bottom: 1px solid #000;
+
+						@include is-sp{
+							padding: 5px 10px;
+						}
 					}
 				}
 			}
@@ -148,7 +152,7 @@
 			}
 
 			.heat20 {
-				font-weight: 400;
+				font-weight: 500;
 				@include font-line(18);
 				padding: 100px 0 0 0;
 
@@ -211,7 +215,7 @@
 			}
 
 			.content {
-				font-weight: 400;
+				font-weight: 500;
 				@include font-line(18, 29.7);
 				padding: 20px 0 40px 0;
 
@@ -222,7 +226,7 @@
 
 			.seismic_grade {
 				font-size: 18px;
-				font-weight: 400;
+				font-weight: 500;
 				padding: 20px 0 0 0;
 
 				@include font-line(18);
@@ -277,7 +281,7 @@
 				}
 	
 				.desc {
-					font-weight: 400;
+					font-weight: 500;
 					padding: 20px 0 0 0;
 					@include font-line(18);
 					
@@ -312,9 +316,13 @@
 							width: calc(100% / 4);
 							border-left: 1px solid #000;
 							text-align: center;
-							font-weight: 400;
+							font-weight: 500;
 							@include font-line(16);
 							padding: 5px 0;
+
+							@include is-sp{
+								padding: 0;
+							}
 						}
 	
 						&:nth-of-type(1){
@@ -335,9 +343,10 @@
 							border-top: 1px solid;
 							text-align: center;
 							padding: 5px 0;
-							font-weight: 400;
+							font-weight: 500;
 							@include font-line(16);
 							position: relative;
+
 							&:not(:first-child){
 								border-left: 1px solid #000;
 							}
@@ -391,7 +400,7 @@
 							}
 	
 							.second_sub{
-								font-weight: 400;
+								font-weight: 500;
 								@include font-line(16);
 								color: #000;
 								letter-spacing: -2px;

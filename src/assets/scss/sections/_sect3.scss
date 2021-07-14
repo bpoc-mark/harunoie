@@ -74,10 +74,14 @@
 				font-family: "Noto Sans JP", sans-serif;
 				@include font-line(16);
 				color: #d88e9b;
+				
+				@include is-sp{
+					margin-bottom: 25px;
+				}
 			}
 
 			p{
-				font-weight: 400;
+				font-weight: 500;
 				font-family: "Noto Sans JP", sans-serif;
 				@include font-line(18, 29.7);
 				color: #000;
@@ -122,7 +126,7 @@
 				height: 120px;
 
 				@include is-max(920px){
-					top: 10px;
+					top: -15px;
 					left: unset;
 					right: 220px;
 					width: 213px;
@@ -207,10 +211,14 @@
 				font-family: "Noto Sans JP", sans-serif;
 				@include font-line(16);
 				color: #d88e9b;
+
+				@include is-sp{
+					margin-bottom: 25px;
+				}
 			}
 
 			p{
-				font-weight: 400;
+				font-weight: 500;
 				font-family: "Noto Sans JP", sans-serif;
 				@include font-line(18, 29.7);
 				color: #000;
@@ -302,10 +310,14 @@
 				font-family: "Noto Sans JP", sans-serif;
 				@include font-line(16);
 				color: #d88e9b;
+
+				@include is-sp{
+					margin-bottom: 25px;
+				}
 			}
 
 			p{
-				font-weight: 400;
+				font-weight: 500;
 				font-family: "Noto Sans JP", sans-serif;
 				@include font-line(18, 29.7);
 				color: #000;

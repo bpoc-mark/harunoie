@@ -31,6 +31,7 @@
                             width: calc(100% - 45px);
                             display: flex;
                             justify-content: center;
+                            padding-right: 50px;
                         }
                     }
 
@@ -70,13 +71,14 @@
                     }
 
                     .txt_des{
-                        font-weight: 400;
+                        font-weight: 500;
                         font-family: "Noto Sans JP", sans-serif;
                         @include font-line(18, 29);
                         color: #000;
 
                         span{
                             color: #d88e9b;
+                            font-weight: 700;
                         }
                     }
 
@@ -127,6 +129,10 @@
                                         height: 10px;
                                         background-color: #fff;
                                         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+                                        @include is-sp{
+                                            bottom: -.5px;
+                                        }
                                     }
 
                                     p{
@@ -166,13 +172,26 @@
                                             @include font-line(20, 33);
                                         }
 
-                                        span{
+                                        .highlight{
+                                            font-weight: 700;
                                             @include font-line(32, 33);
                                             background: linear-gradient(rgba(0, 0, 0, 0) 70%, #ffe600 25%);
 
                                             @include is-sp{
                                                 @include font-line(24, 33);
                                             }
+                                        }
+
+                                        .quote-left {
+                                            margin-left: -10px;
+                                            position: relative;
+                                            top: -7px;
+                                        }
+
+                                        .quote-right {
+                                            margin-right: -10px;
+                                            position: relative;
+                                            // bottom: -7px;
                                         }
                                     }
 

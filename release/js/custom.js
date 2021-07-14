@@ -5,6 +5,7 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     arrows: false,
+    autoplay: true,
     centerMode: true,
     centerPadding: '30px',
     slidesToShow: 1.04,
