@@ -51,7 +51,11 @@
                     img{
                         width: 33.3333px;
                         height: 25px;
-                        margin-bottom: 8px;
+                        margin: 0 auto 8px;
+
+                        &:nth-of-type(2){
+                            display: none;
+                        }
                     }
                     p{
                         text-align: center;
@@ -59,6 +63,30 @@
                         font-weight: 500;
                         @include font-line(16);
                         color: #fff;
+                    }
+                }
+
+                &:hover{
+                    background-color: #fff;
+                    transition: all 450ms;
+                    border: 1px solid #d88e9b;
+
+                    .head_contact_item{
+                        display: inline-block;
+                        text-align: center;
+                        img{
+
+                            &:nth-of-type(1){
+                                display: none;
+                            }
+                            &:nth-of-type(2){
+                                display: block;
+                            }
+                        }
+
+                        p{
+                            color: #d88e9b;
+                        }
                     }
                 }
             }

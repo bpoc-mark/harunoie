@@ -87,10 +87,38 @@
                         top: 50%;
                         right: 13px;
                         transform: translate(0, -50%);
+
+                        &:nth-of-type(2){
+                            display: none;
+                        }
+
+                        @include is-max(420px){
+                            display: none;
+                        }
                     }
 
                     @include is-max(565px){
                         margin-top: 35px;
+                    }
+
+                    &:hover{
+                        background-color: #d88e9b;
+                        color: #fff;
+                        transition: all 450ms;
+
+                        img{
+                            &:nth-of-type(1){
+                                display: none;
+                            }
+                            &:nth-of-type(2){
+                                display: block;
+
+                                @include is-max(420px){
+                                    display: none;
+                                }
+                            }
+                           
+                        }
                     }
                 }
             }

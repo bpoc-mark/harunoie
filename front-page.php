@@ -230,15 +230,14 @@
                         <hr class="border-line">
                         <p class="c-txt">
                             「普通の家では満足できない」そんなあなたのためのプラン。<br>
-                            <span class="space"></span>
+                            　<br>
                             ユニークな外観には似つかわしくない、家族のつながりを重視した優しい間取りが、このプランの大きな特徴。<br>
-                            <span class="space"></span>
+                            　<br>
                             回遊性をもたせることにより、すべての部屋を緩くつなげた動線。<br>
                             親子間のコミュニケーションを生むリビング階段。<br>
                             吹き抜けをとおしてリビングとつながる2階のフリースペース。<br>
-                            <span class="space"></span>
-                            家族がどこにいても、お互いの気配を感じることのできるプランです。
-
+                            　<br>
+                            家族がどこにいても、お互いの気配を感じることのできるプランです
                         </p>
                     </div>
                     <div class="c-image">
@@ -627,13 +626,14 @@
             <div class="heat">
                 <div class="heat__col-1">
                     <p class="title">熱性能「HEAT20 G2」</p>
-                    <p class="content">はるのいえの企画住宅は、『HEAT20 G2』が標準仕様。
-                        『HEAT20』とは住宅に関する有識者を集め2009年にできた民間団体で、断熱性能に関して「G1」「G2」「G3」の3段階の基準が設定されています。
-                        各地域における代表的な暖房方式を調査・検討したうえで、「冬期間の室内温度環境」と「省エネルギー性能」を踏まえて設定されており、 G1＜G2＜G3と数字が大きくなるほど断熱性能は高くなります。
-                        <br><br>
-                        現在、日本には大きく分けて3つの「断熱性能の基準」があります。
-                        なかでも、もっとも低い基準が『建築物のエネルギー消費性能の向上に関する法律（建築物省エネ法）』による「平成28年基準」。
-                        その次が「ZEH（ゼッチ）基準」。 ZEH（ゼッチ）とは“ネット・ゼロ・エネルギー・ハウス”の略で、消費エネルギーよりもつくるエネルギーが多くなることを目指した住宅のこと。
+                    <p class="content">
+                        はるのいえの企画住宅は、『HEAT20 G2』が標準仕様。<br>
+                        『HEAT20』とは住宅に関する有識者を集め2009年にできた民間団体で、断熱性能に関して「G1」「G2」「G3」の3段階の基準が設定されています。<br>
+                        各地域における代表的な暖房方式を調査・検討したうえで、「冬期間の室内温度環境」と「省エネルギー性能」を踏まえて設定されており、G1＜G2＜G3と数字が大きくなるほど断熱性能は高くなります。<br>
+                        <br>
+                        現在、日本には大きく分けて3つの「断熱性能の基準」があります。<br>
+                        なかでも、もっとも低い基準が『建築物のエネルギー消費性能の向上に関する法律（建築物省エネ法）』による「平成28年基準」。<br>
+                        その次が「ZEH（ゼッチ）基準」。ZEH（ゼッチ）とは“ネット・ゼロ・エネルギー・ハウス”の略で、消費エネルギーよりもつくるエネルギーが多くなることを目指した住宅のこと。<br>
                         そして、最も高性能な基準が「HEAT20の基準」です。
                     </p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table.png" alt="">
@@ -658,15 +658,12 @@
                         </tr>
                     </table>
                     <p class="note">注）今後、変更の可能性もあります。</p>
-                    <p class="heat20">なお、はるのいえでは建物の外皮性能だけでなく
-                        <span class="heat_loss">日射熱・生活熱・換気による熱損失</span>
-                        など、さまざまな要素を加味してシミュレーションを繰り返すことで、『HEAT20』の厳しい水準をクリアしています。
+                    <p class="heat20">なお、はるのいえでは建物の外皮性能だけでなく<span class="heat_loss">日射熱・生活熱・換気による熱損失</span>など、さまざまな要素を加味してシミュレーションを繰り返すことで、『HEAT20』の厳しい水準をクリアしています。
                     </p>
                 </div>
                 <div class="heat__col-2">
                     <p class="title">耐震等級「3」</p>
-                    <p class="content">建築基準法で規定された耐震性能は「震度6～7の大地震でも倒壊・崩壊しない」ことを基準としたもの。
-                        これは『耐震等級1』に該当し、3段階に分かれた耐震等級の中でもっとも性能が低いと位置付けられています。
+                    <p class="content">建築基準法で規定された耐震性能は「震度6～7の大地震でも倒壊・崩壊しない」ことを基準としたもの。これは『耐震等級1』に該当し、3段階に分かれた耐震等級の中でもっとも性能が低いと位置付けられています。
                     </p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/sect_6_table-2.png" alt="">
                     <p class="seismic_grade">
@@ -686,8 +683,7 @@
                 <div class="fuel">
                     <div class="fuel__col-1">
                         <p class="title">
-                            燃費で家の<br>
-                            性能を比べる
+                            燃費で家の<br>性能を比べる
                         </p>
                         <p class="desc">HEAT20 G2基準の「PLAN05」に暮らす家庭と、省エネ基準同等プランの家に暮らす家庭の一年間の光熱費を想定してみました。その差を比べてみてください。
                         </p>
@@ -722,9 +718,9 @@
                             </p>
                             <div class="box_cont_2">
                                 <p class="year">省エネ基準の家より</p>
-                                <p class="price">¥305,246- <span style="color: #D88E9B; font-weight: bold;">お得</span></p>
+                                <p class="price">¥305,246-<span style="color: #D88E9B; font-weight: bold;">お得</span></p>
                             </div>
-                            <p class="offer">※太陽光発電システム 1kwあたり税込173,533円でご提供しています。</p>
+                            <p class="offer">※太陽光発電システム1kwあたり税込173,533円でご提供しています。</p>
                         </div>
                     </div>
                     <div class="methods">
@@ -733,7 +729,7 @@
                                 ※すべて全館冷暖房（住宅全体を24時間、冬季は20℃以上、夏季は27℃以下に維持して、年間を通じて室内環境を健康で快適な状態で維持する空調方法）
                             </li>
                             <li>
-                                ※光熱費の計算は 電気27円/kwh、ガス180円/㎡、灯油64円/ℓ、売電2021年度19円/kWの単価設定により算定することを基本とします。
+                                ※光熱費の計算は電気27円/kwh、ガス180円/㎡、灯油64円/ℓ、売電2021年度19円/kWの単価設定により算定することを基本とします。
                             </li>
                             <li>
                                 ※この計算結果は、標準モデル生活を行なった場合の計算結果であり、実際の燃費を保証するものではありません。
@@ -881,7 +877,7 @@
         <div class="sect_10__wrapper">
             <div class="sect_10__cont flex">
                 <div class="sect_10__cont__item">
-                    <a href="">
+                    <a href="<?php echo get_site_url(); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/release/image/footer/footer_logo.png" alt="">
                     </a>
                 </div>
@@ -900,6 +896,7 @@
                     <a href="https://haruno-ie.com/contact" target="_blank">
                         家づくりのお問い合わせはこちら
                         <img src="<?php echo get_template_directory_uri();?>/release/image/sect_10/sect_10_btn_arrow.png" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/release/image/sect_10/sect_10_btn_arrow_white.png" alt="">
                     </a>
                 </div>
             </div>

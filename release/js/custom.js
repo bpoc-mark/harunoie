@@ -30,16 +30,14 @@ $(document).ready(function () {
     autoplay: true,
     slidesToShow: 1
   }); // 画面幅が375pxより小さい場合、viewportを再設定
-
-  $(window).on('load', function () {
-    var w = $(window).width();
-
-    if (w <= 450) {
-      $('meta[name=viewport]').attr('content', 'width=480');
-    } else {
-      $('meta[name=viewport]').attr('content', 'width=device-width');
-    }
-  });
+  // $( window ).on( 'load', function() {
+  // 	var w = $( window ).width();
+  // 	if( w <= 450 ) {
+  // 		$( 'meta[name=viewport]' ).attr( 'content', 'width=480' );
+  // 	} else {
+  // 		$( 'meta[name=viewport]' ).attr( 'content', 'width=device-width' );
+  // 	}
+  // }); 
 });
 $(function () {
   $('a[href*=#]:not([href=#])').click(function () {

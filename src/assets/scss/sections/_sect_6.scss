@@ -104,6 +104,7 @@
 				font-weight: 500;
 				padding: 20px 0 50px 0;
 				@include font-line(18, 29.7);
+                letter-spacing: -1px;
 			}
 
 			.g2 {
@@ -323,6 +324,9 @@
                     @include is-sp {
                         width: 48%;
                     }
+                    @include is-max(400px) {
+                        width: 100%;
+                    }
                     .title {
                         font-size: 16px;
                         font-weight: 700;
@@ -360,6 +364,10 @@
                     width: 27.78%;
                     @include is-sp {
                         width: 48%;
+                    }
+                    @include is-max(400px) {
+                        width: 100%;
+                        margin: 20px 0 0 0;
                     }
                     .title {
                         font-weight: 700;

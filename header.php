@@ -46,11 +46,14 @@
         <div class="page__wrapper">
             <div class="head_nav">
                 <div class="head_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/header/head_logo.png" alt="">
+                    <a href="<?php echo get_site_url(); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/release/image/header/head_logo.png" alt="">
+                    </a>
                 </div>
                 <a class="head_contact" href="https://haruno-ie.com/contact" target="_blank">
                     <div class="head_contact_item">
                         <img src="<?php echo get_template_directory_uri(); ?>/release/image/header/head_contact.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/release/image/header/head_contact_pink.png" alt="">
                         <p>contact</p>
                     </div>
                 </a>

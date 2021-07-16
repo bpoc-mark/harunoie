@@ -73,6 +73,13 @@
 		.arrow-white {
 			color: #fff;
 		}
+
+		&:hover{
+			p{
+				color: #fff;
+				transition: all 450ms;
+			}
+		}
 	}
 
 }

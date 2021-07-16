@@ -60,9 +60,17 @@
                 
 
                 img{
-                    transform: rotate(-3deg) scale(.98);
+                    transform: rotate(-3deg) scale(0.97);
                     position: relative;
-                    top: -38px;
+                    top: -30px;
+
+                    @include is-max(1200px){
+                        top: -20px;
+                    }
+
+                    @include is-max(1000px){
+                        top: -15px;
+                    }
 
                     @include is-sp{
                         transform: unset;

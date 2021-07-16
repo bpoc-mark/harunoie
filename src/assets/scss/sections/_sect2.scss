@@ -106,6 +106,10 @@
                                 padding-bottom: 15px;
                             }
 
+                            @include is-max(480px){
+                                align-items: flex-start;
+                            }
+
                             .sub_itm{
                                 position: relative;
                                 &:nth-of-type(1){

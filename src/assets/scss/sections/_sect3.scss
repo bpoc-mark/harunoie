@@ -115,6 +115,11 @@
 					position: relative;
 					right: -30px;
 				}
+
+				@include is-max(480px){
+					width: 77.08%;
+					height: auto;
+				}
 			}
 
 			.performance-pc {
@@ -131,6 +136,12 @@
 					right: 220px;
 					width: 213px;
 					height: 80px;
+				}
+
+				@include is-max(480px){
+					width: 44.38%;
+					height: auto;
+					right: 45%;
 				}
 			}
 		}
@@ -246,6 +257,11 @@
 					width: 372px;
 					height: 372px;
 				}
+
+				@include is-max(480px){
+					width: 77.5%;
+					height: auto;
+				}
 			}
 
 			.d-image {
@@ -259,6 +275,12 @@
 					top: -17px;
 					right: unset;
 					left: 215px;
+				}
+
+				@include is-max(480px){
+					width: 37.5%;
+					height: auto;
+					left: 44.79%;
 				}
 			}
 		}
@@ -334,6 +356,12 @@
 					top: -40px;
 					right: unset;
 					left: 250px;
+				}
+
+				@include is-max(480px){
+					width: 26.67%;
+					height: auto;
+					left: 52.08%;
 				}
 			}
 		}
