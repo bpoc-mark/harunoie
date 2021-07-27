@@ -407,7 +407,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="right_features">
+                <div class="right_features_pc">
                     <p class="right_fea right-title-primary">plan</p>
                 </div>
             </div>
@@ -618,6 +618,9 @@
                 </div>
             </div>
         </div>
+        <div class="right_features_sp">
+            <p class="right_fea right-title-primary">plan</p>
+        </div>
     </section>
     <section class="sect_6" id="sect_6">
         <img class="sect_6__image" src="<?php echo get_template_directory_uri(); ?>/release/image/sect_6/asset_1.png" alt="">
@@ -742,7 +745,11 @@
     </section>
     <section class="sect_7" id="sect_7">
         <div class="l-wrap">
-            <p class="sect_7__text">procedure</p>
+            <p class="sect_7__text_pc">procedure</p>
+            <div class="sect_7__text_sp">
+                <p>procedure</p>
+            </div>
+            
             <div class="steps">
                 <!-- STEP 1 -->
                 <div class="procedure__left afterimage">

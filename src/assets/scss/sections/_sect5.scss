@@ -6,6 +6,7 @@
 
 	@include is-sp{
 		padding-bottom: 50px;
+		overflow: unset;
 	}
 
 	.right_fea_none {
@@ -50,6 +51,35 @@
 
 		li.slick-active button {
 			background-color: #d88e9b;
+		}
+	}
+
+	.right_features_sp{
+		display: none;
+		@include font-line(28);
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 700;
+		writing-mode: vertical-rl;
+		position: absolute;
+		top: 0;
+		right: -90px;
+
+		@include is-max(1090px){
+			right: -15px;
+		}
+
+		@include is-sp{
+			display: block;
+			right: unset;
+			left: 17px;
+			top: 60px;
+			height: 98%;
+
+			p{
+				height: 80px;
+				position: sticky;
+				top: 10px;
+			}
 		}
 	}
 
@@ -417,7 +447,7 @@
 				}
 			}
 
-			.right_features{
+			.right_features_pc{
 				@include font-line(28);
 				font-family: 'Noto Sans JP', sans-serif;
 				font-weight: 700;
@@ -431,9 +461,19 @@
 				}
 
 				@include is-sp{
+					display: none;
 					right: unset;
 					left: 17px;
 					top: 60px;
+					background-color: red;
+					height: 7500px;
+
+					p{
+						background-color: yellow;
+						height: 80px;
+						position: sticky;
+						top: 10px;
+					}
 				}
 			}
 		}

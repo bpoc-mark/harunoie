@@ -5,6 +5,7 @@
 	overflow: hidden;
 	@include is-sp {
 		padding: 20px 0 60px;
+		overflow: unset;
 	}
 
 	.l-wrap {
@@ -17,7 +18,7 @@
 		}
 	}
 
-	&__text {
+	&__text_pc {
 		position: absolute;
 		top: 30px;
     	right: -60px;
@@ -33,6 +34,35 @@
 		@include is-sp {
 			top: 100px;
     		right: -40px;
+			display: none;
+		}
+	}
+
+	&__text_sp {
+		display: none;
+		position: absolute;
+		top: 30px;
+    	right: -60px;
+		// transform: rotate(90deg);
+		writing-mode: vertical-rl;
+		color: #9a5165;
+		font-size: 28px;
+		font-weight: 700;
+		height: 98%;
+		@include is-max(1090px){
+			right: -50px;
+		}
+
+		@include is-sp {
+			top: 60px;
+    		right: 10px;
+			display: block;
+
+			p{
+				height: 170px;
+				position: sticky;
+				top: 10px;
+			}
 		}
 	}
 
